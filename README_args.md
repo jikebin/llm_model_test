@@ -1,6 +1,6 @@
 # LLM 性能压测指标说明（Markdown 版）
 
-> 适用于你当前的 SGLang + OpenAI 兼容端点压测脚本（`llm_bench.py`、`generate_report.py`）。下述名词与**脚本输出列名**一一对应，便于阅读 `summary_all.csv` / `report.html`。
+> 适用于 OpenAI 兼容端点压测脚本（`llm_bench.py`、`generate_report.py`）。下述名词与**脚本输出列名**一一对应，便于阅读 `summary_all.csv` / `report.html`。
 
 ---
 
@@ -153,6 +153,3 @@
 * **想稳住 P99**：限流/排队隔离、预热实例、降低单请求资源波动、避免极端长 prompt。
 * **样本量**：`requests_per_stage` 建议 ≥ `max(200, 30×并发)` 用于看 P95；P99 适当更多。
 
----
-
-需要的话，我可以把这份指标说明**直接附加到自动化压测报告**里（在 `report.html` 末尾追加“指标解释”章节），或输出一份**企业内审稿模板（含 SLO 协议段）**，方便你发周报/评审。
