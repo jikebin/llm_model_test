@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant. Keep answers concise and deterministic."
+  },
+  {
+    "role": "user",
+    "content": "用中文简洁解释“蒸发冷却”的原理，限制在两句话内，并且给出一个日常生活中的例子。"
+  }
+]
